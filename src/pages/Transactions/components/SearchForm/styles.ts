@@ -42,6 +42,5 @@ export const SearchFormContainer = styled.form`
       color: ${(props) => props.theme.white};
       transition: background-color 0.2s, color 0.2s, border-color 0.2s;
     }
-  }  
-
-  `
+  }
+`

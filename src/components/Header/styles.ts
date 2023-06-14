@@ -18,15 +18,15 @@ export const HeaderContent = styled.div`
 export const NewTransactionButton = styled.button`
   height: 50px;
   padding: 0 1.25rem;
-  
+
   color: ${(props) => props.theme.white};
   font-weight: bold;
-  
+
   border: 0;
   background: ${(props) => props.theme['green-500']};
   border-radius: 6px;
   cursor: pointer;
-  
+
   &:hover {
     background: ${(props) => props.theme['green-700']};
     transition: background-color 0.2s;

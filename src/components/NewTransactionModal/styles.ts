@@ -61,9 +61,7 @@ export const Content = styled(Dialog.Content)`
         transition: background-color 0.2s;
       }
     }
-
   }
-
 `
 
 export const CloseButton = styled(Dialog.Close)`
@@ -88,7 +86,9 @@ interface TransactionTypeButtonProps {
   variant: 'income' | 'outcome'
 }
 
-export const TransactionTypeButton = styled(RadioGroup.Item)<TransactionTypeButtonProps>`
+export const TransactionTypeButton = styled(
+  RadioGroup.Item,
+)<TransactionTypeButtonProps>`
   background: ${(props) => props.theme['gray-700']};
   padding: 1rem;
   display: flex;
@@ -99,7 +99,7 @@ export const TransactionTypeButton = styled(RadioGroup.Item)<TransactionTypeButt
   cursor: pointer;
   border: 0;
   color: ${(props) => props.theme['gray-300']};
-  
+
   svg {
     color: ${(props) =>
       props.variant === 'income'

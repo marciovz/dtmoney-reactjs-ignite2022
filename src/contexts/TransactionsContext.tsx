@@ -39,7 +39,7 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
         _sort: 'createdAt',
         _order: 'desc',
         q: query,
-      }
+      },
     })
 
     setTransactions(response.data)
@@ -58,17 +58,19 @@ export function TransactionsProvider({ children }: TransactionsProviderProps) {
 
     setTransactions((state) => [response.data, ...state])
   }
-  
+
   useEffect(() => {
     fetchTransactions()
   }, [])
 
   return (
-    <TransactionsContext.Provider value={{ 
-      transactions,
-      fetchTransactions,
-      createTransaction,
-    }}>
+    <TransactionsContext.Provider
+      value={{
+        transactions,
+        fetchTransactions,
+        createTransaction,
+      }}
+    >
       {children}
     </TransactionsContext.Provider>
   )
