@@ -2,31 +2,31 @@
   "transactions": [
     {
       "id": 1,
-      "description": "Desenvolvimento de site",
+      "description": "Entrega projeto cliente",
       "type": "income",
-      "category": "Venda",
-      "price": 14000,
+      "category": "Projeto",
+      "price": 8000,
       "createdAt": "2022-07-29T19:36:44.505Z"
     },
     {
       "id": 2,
-      "description": "Hambúrguer",
+      "description": "Compras mercado",
       "type": "outcome",
-      "category": "Alimentação",
-      "price": 60,
+      "category": "Mercado",
+      "price": 600,
       "createdAt": "2022-07-29T19:30:44.505Z"
     },
     {
-      "description": "Desenvolvimento de App",
-      "price": 10000,
-      "category": "Vendas",
-      "type": "income",
+      "description": "Abastecimento",
+      "price": 200,
+      "category": "Veiculo",
+      "type": "outcome",
       "createdAt": "2023-06-13T22:27:06.085Z",
       "id": 3
     },
     {
-      "description": "Iogurte de banana",
-      "price": 4,
+      "description": "Almoço",
+      "price": 25,
       "category": "Alimentação",
       "type": "outcome",
       "createdAt": "2023-06-13T22:43:29.753Z",
